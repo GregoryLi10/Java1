@@ -1,7 +1,8 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class StartingArrays {
 	
-	Scanner input=new Scanner(System.in);
+	static Scanner in=new Scanner(System.in);
 	
 	public static void display(int[] arr) { //method to display entire array
 		for (int n=0; n<arr.length; n++) {
@@ -25,8 +26,24 @@ public class StartingArrays {
 		arr[0]=n;
 	}
 	
-	public void userArray() {
-		
+	public static void userArray(int x) {
+		int[]userArr=new int[x];
+		System.out.println("input "+x+" numbers");
+		for (int i=0; i<x; i++) {
+			int n=in.nextInt();
+			userArr[i]=n;
+		}
+		System.out.println(Arrays.toString(userArr));
+	}
+	
+	public static void reverse(int[] arr) {
+		 int x, n=arr.length;
+        for (int i=0; i<n/2; i++) {
+            x=arr[i];
+            arr[i]=arr[n-i-1];
+            arr[n-i-1]=x;
+        }
+            System.out.println(Arrays.toString(arr));
 	}
 	
 	public static void main(String[]args) {
@@ -34,6 +51,7 @@ public class StartingArrays {
 		display(myArr); 
 		swap(myArr);
 		display(myArr);
-		int[]myArr1=oneToN(10);
+		userArray(3);
+		reverse(myArr);
 	}
 }

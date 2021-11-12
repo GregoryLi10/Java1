@@ -29,5 +29,7 @@ public class ArrayTest {
 		for (int num:arr3) { //for each loop
 			System.out.print(num+" "); //prints each number in the array, only access, not modify
 		}
+		
 	}
+	
 }
