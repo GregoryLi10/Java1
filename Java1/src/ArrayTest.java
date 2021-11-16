@@ -13,6 +13,7 @@ public class ArrayTest {
 		}
 	}
 	
+	
 	public static void main(String[] args) {
 //		int[] arr1= {5, 4, 8, 3}; //useful for testing but not practical
 //		String[] arr2= new String[6]; //practical
@@ -25,10 +26,11 @@ public class ArrayTest {
 //		int[]myArr=createArray(10); //creates array with 10 things
 //		display(myArr); //displays array
 		
-		int[]arr3={1,54,2,7};
-		for (int num:arr3) { //for each loop
-			System.out.print(num+" "); //prints each number in the array, only access, not modify
-		}
+//		int[]arr3={1,54,2,7};
+//		for (int num:arr3) { //for each loop
+//			System.out.print(num+" "); //prints each number in the array, only access, not modify
+//		}
+		
 		
 	}
 	
