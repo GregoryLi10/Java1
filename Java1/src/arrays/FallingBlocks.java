@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 public class FallingBlocks extends JPanel {
 	
-	private int WIDTH = 800, HEIGHT = 600, NUMBLOCKS = 50, DIAM=10;
+	private int WIDTH = 800, HEIGHT = 600, NUMBLOCKS = 100, DIAM=10;
 	private int minvy=2, maxvy=10, r, gr, b;
 	
 	private int[]xValues=new int[NUMBLOCKS];

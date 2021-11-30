@@ -13,7 +13,6 @@ public class ArrayTest {
 		}
 	}
 	
-	
 	public static void main(String[] args) {
 //		int[] arr1= {5, 4, 8, 3}; //useful for testing but not practical
 //		String[] arr2= new String[6]; //practical
