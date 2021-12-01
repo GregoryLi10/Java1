@@ -45,7 +45,13 @@ public class WarmupArrays {
 					div[i]=true;
 			}
 		}
-		System.out.println(Arrays.toString(div));
+		for (boolean p:div) {
+			if (p)
+				System.out.print("yes ");
+			else
+				System.out.print("no ");
+		}
+		System.out.println();
 	}
 	
 	public static void avg(int[] arr) {
@@ -58,10 +64,42 @@ public class WarmupArrays {
 		System.out.println(Arrays.toString(avg));
 	}
 	
+	public static void shift(String[] arr, int n) {
+		String[] arr1=new String[arr.length-n];
+		for (int i=0; i<arr1.length; i++) {
+			arr1[i]=arr[i];
+		}
+		for (int i=arr.length-n,j=0; i<arr.length; i++,j++) {
+			arr[j]=arr[i];
+		}
+		for (int i=0; i<arr1.length; i++, n++) {
+			arr[n]=arr1[i];
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+	
+	public static void average(int[] arr) {
+		double sum=0;
+		for (int x:arr) 
+			sum+=x;
+		System.out.println(sum/arr.length);
+	}
+	
+	public static void dot(int[] a, int[] b) {
+		int sum=0;
+		for (int i=0; i<a.length; i++) {
+			sum+=a[i]*b[i];
+		}
+		System.out.println(sum);
+	}
+	
 	public static void main (String[] args) {
 //		trim(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
 //		fibonacci(15);
 //		div(new int[] {8, 3, 12, 5, 15, 45});
-		avg(new int[] {4, 6, 2, 12});
+//		avg(new int[] {4, 6, 2, 12});
+//		shift(new String[] {"I", "love", "C", "S"}, 2);
+//		average(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
+		dot(new int[] {5, 3, 1}, new int[] {8,4,7});
 	}
 }
