@@ -94,12 +94,12 @@ public class WarmupArrays {
 	}
 	
 	public static void main (String[] args) {
-//		trim(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
-//		fibonacci(15);
-//		div(new int[] {8, 3, 12, 5, 15, 45});
-//		avg(new int[] {4, 6, 2, 12});
-//		shift(new String[] {"I", "love", "C", "S"}, 2);
-//		average(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
-		dot(new int[] {5, 3, 1}, new int[] {8,4,7});
+////		trim(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
+////		fibonacci(15);
+////		div(new int[] {8, 3, 12, 5, 15, 45});
+////		avg(new int[] {4, 6, 2, 12});
+////		shift(new String[] {"I", "love", "C", "S"}, 2);
+////		average(new int[] {1,1,1,2,3,4,5,6,7,7,7,7});
+//		dot(new int[] {5, 3, 1}, new int[] {8,4,7});
 	}
 }
