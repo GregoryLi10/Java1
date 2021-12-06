@@ -15,6 +15,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.Arrays;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -98,8 +99,10 @@ public class WhackAMole {
         	g.setColor(Color.white);
         	g.drawString(i+1+"", buttonsA[i]+windowWidth/50, windowHeight/30);
 
-        	if (!showing[i])
+        	if (!showing[i]) {
         		g.drawImage(dirtImg, x[i], y[i], diamx, diamy, null); //draws dirt mounds if the corresponding boolean is false
+
+        	}
         	else {
         		g.drawImage(moleImg, x[i], y[i], diamx, diamy, null); //draws a mole instead of dirt mound if the corresponding boolean is true
         	}
