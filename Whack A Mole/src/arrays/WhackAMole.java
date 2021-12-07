@@ -1,7 +1,7 @@
 // Filler code for Whack a Mole by Mr. Friedman
 // Name: Gregory Li
 // Special features: TIMESTEP slider, customize NUMAPPEARING with buttons, add score if all moles are clicked between timesteps
-//Magic numbers? 132, 188, +1s, 
+//Magic numbers? 188  
 
 package arrays;
 import java.awt.Color;
@@ -133,7 +133,7 @@ public class WhackAMole {
     			x1++;
     	}
     	if (x1==showing.length)
-    		score+=NUMAPPEARING/NUMMOLES*10; 
+    		score+=NUMAPPEARING/2; 
     	
     	showing=new boolean[NUMMOLES]; //refreshes all booleans in showing to become false
     	//chooses NEW random moles to appear up to the number NUMAPPEARING
@@ -191,8 +191,8 @@ public class WhackAMole {
         
         topPanel.add(scoreDisplay);
         
-        timeSlider = new JSlider(1, TIMESTEP/1000+3, TIMESTEP/1000); //initializes slider, sets values from 1 to current timestep+3seconds
-       	//paints slider
+        timeSlider = new JSlider(1, TIMESTEP/1000+3, TIMESTEP/1000); //initializes slider, sets values from 1 to current timestep+3 seconds and places slider on current timestep value
+       	//paints sliderin
         timeSlider.setPaintTrack(true);	
        	timeSlider.setPaintTicks(true);
        	timeSlider.setPaintLabels(true);
