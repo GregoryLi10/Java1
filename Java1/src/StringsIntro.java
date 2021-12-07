@@ -35,12 +35,19 @@ public class StringsIntro {
 		System.out.println();
 	}
 	
+	public static void grid(String str) {
+		for (int i=0; i<str.length(); i++) {
+			System.out.println(str);
+			str=str.substring(1)+str.charAt(0);
+		}
+	}
+	
 	public static void main(String[] args) {
 		half("hi there");
 		connect("hello", "there");
 		adverb("happily");
 		contain("hippo", "hi");
 		invert("hello");
-		
+		grid("hello");
 	}
 }
