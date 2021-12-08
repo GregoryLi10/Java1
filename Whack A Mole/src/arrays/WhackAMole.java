@@ -227,7 +227,7 @@ public class WhackAMole {
             public void mouseEntered(MouseEvent e) {}
 
             @Override
-            public void mouseExited(MouseEvent e) {window.getContentPane().repaint();}
+            public void mouseExited(MouseEvent e) {}
         });
         
         window.addComponentListener(new ComponentAdapter() {
