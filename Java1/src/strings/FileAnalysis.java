@@ -142,7 +142,6 @@ public class FileAnalysis {
 	// returns the longest sentence in the file
 	private String longestSentence() {
 		String[] a=content.split("\\.|\n");
-		System.out.println(Arrays.toString(a));
 		String str="";
 		int m=0;
 		for (String s:a) {
