@@ -2,15 +2,15 @@ import java.util.Arrays;
 
 public class Array2DIntro {
 	/*
-	arr1[0][0]; empty array               
-	B. arr1[2][1]; 2 by 1 array              
-	C. arr1[1][2]; 1 by 2 array               
-	D. arr1[0][2]; empty array
-    E. arr2[0][1]; empty array            
-    F. arr2[2][1]; 2 by 1 array         
-    G. (int)(arr2[0][0] + arr1[1][1]); error 
-	H. (char)(arr2[1][1] + arr1[2][0]); error                  
-	I. arr1[1]; 1 row with null
+	A. arr1[0][0]; 6           
+	B. arr1[2][1]; 1   
+	C. arr1[1][2]; error             
+	D. arr1[0][2]; 3
+    E. arr2[0][1]; k            
+    F. arr2[2][1]; error     
+    G. (int)(arr2[0][0] + arr1[1][1]); 105 
+	H. (char)(arr2[1][1] + arr1[2][0]); k                  
+	I. arr1[1]; 6, 8, 3, 4
 	*/
     
 	public static void nxn(int n) {
