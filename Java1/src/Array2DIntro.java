@@ -30,13 +30,7 @@ public class Array2DIntro {
 	}
 	
 	public static void fill (int a, int b, int c, int d, int e, int f) {
-		int[][] arr=new int [3][2];
-		arr[0][0]=a;
-		arr[0][1]=b;
-		arr[1][0]=c;
-		arr[1][1]=d;
-		arr[2][0]=e;
-		arr[2][1]=f;
+		int[][] arr= {{a}, {b,c},{d,e,f}};
 		for (int[] arr1: arr)
 			System.out.println(Arrays.toString(arr1));
 	}
