@@ -7,6 +7,14 @@ public class ArrayTest {
 		return newArr;
 	}
 	
+	public static int[] something(int n) {
+		int[] arr = new int[n];
+		arr[0] = 1;
+		for (int i = 1; i < arr.length; i++)
+		arr[i] = arr[i-1] + i;
+		return arr;
+		}
+	
 	public static void display(int[] arr) { //method to display entire array
 		for (int n=0; n<arr.length; n++) {
 			System.out.print(arr[n]+", ");
@@ -14,6 +22,7 @@ public class ArrayTest {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(Arrays.toString(something(10)));
 //		int[] arr1= {5, 4, 8, 3}; //useful for testing but not practical
 //		String[] arr2= new String[6]; //practical
 //		arr1[3]=5;
