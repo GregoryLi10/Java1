@@ -102,8 +102,8 @@ public class evenMore2DArrays {
 				}
 			}
 			else {
-				for (int j=a[i].length-1; j>=0; j--) {
-					for (int k=a[i].length-1; k>=0; k--) {
+				for (int j=0; j<a[i].length; j++) {
+					for (int k=j+1; k<a[i].length; k++) {
 						if (a[i][k]>a[i][j]) {
 							int t=a[i][j];
 							a[i][j]=a[i][k];
